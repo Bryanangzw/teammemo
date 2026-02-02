@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 5,
+    marginRight: 15,
   },
   checkboxBox: {
     width: 12,
@@ -176,7 +177,6 @@ const styles = StyleSheet.create({
   decisionOptions: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 10,
     marginTop: 10,
   },
 });
@@ -244,7 +244,7 @@ export const QuickMemoPDF = ({ data }: { data: QuickMemoData }) => (
       </View>
 
       <Text style={styles.label}>Priority Level:</Text>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 15 }}>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
         {['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].map((level) => (
           <Checkbox key={level} checked={data.priorityLevel === level} label={level} />
         ))}
@@ -277,7 +277,7 @@ export const QuickMemoPDF = ({ data }: { data: QuickMemoData }) => (
       {/* The Idea */}
       <Text style={styles.subHeader}>1. THE IDEA (One Sentence)</Text>
       <View style={styles.note}>
-        <Text>💡 If you can't explain it in one sentence, it's not clear enough yet.</Text>
+        <Text>TIP: If you can't explain it in one sentence, it's not clear enough yet.</Text>
       </View>
       <Text style={styles.value}>{data.idea}</Text>
 
@@ -310,7 +310,7 @@ export const QuickMemoPDF = ({ data }: { data: QuickMemoData }) => (
       <View style={styles.sectionHeaderNavy}>
         <Text>TEAM DECISION</Text>
       </View>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 15, marginTop: 10 }}>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 10 }}>
         <Checkbox checked={false} label="Approved" />
         <Checkbox checked={false} label="Needs revision" />
         <Checkbox checked={false} label="Not now" />

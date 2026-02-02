@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 5,
+    marginRight: 15,
   },
   checkboxBox: {
     width: 12,
@@ -427,7 +428,7 @@ export const ProjectMemoPDF = ({ data }: { data: ProjectMemoData }) => (
         <Text>TEAM DECISION</Text>
       </View>
       
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 15, marginTop: 10 }}>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 10 }}>
         <Checkbox checked={false} label="APPROVED" />
         <Checkbox checked={false} label="REVISE & RESUBMIT" />
         <Checkbox checked={false} label="NOT NOW" />

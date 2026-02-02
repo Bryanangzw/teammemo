@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 5,
+    marginRight: 15,
   },
   checkboxBox: {
     width: 12,
@@ -455,7 +456,7 @@ export const InitiativeMemoPDF = ({ data }: { data: InitiativeMemoData }) => (
       </View>
 
       <Text style={styles.label}>Bryan's Assessment:</Text>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 10 }}>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 10 }}>
         <Checkbox checked={false} label="Approved" />
         <Checkbox checked={false} label="Approved with modifications" />
         <Checkbox checked={false} label="Need more information" />
@@ -465,7 +466,7 @@ export const InitiativeMemoPDF = ({ data }: { data: InitiativeMemoData }) => (
       <Text style={styles.value}>Notes: _________________________________</Text>
 
       <Text style={styles.label}>Melvin's Assessment:</Text>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 10 }}>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 10 }}>
         <Checkbox checked={false} label="Approved" />
         <Checkbox checked={false} label="Approved with modifications" />
         <Checkbox checked={false} label="Need more information" />
@@ -477,7 +478,7 @@ export const InitiativeMemoPDF = ({ data }: { data: InitiativeMemoData }) => (
       <View style={styles.separator} />
 
       <Text style={styles.label}>Final Decision:</Text>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 15, marginTop: 10 }}>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 10 }}>
         <Checkbox checked={false} label="APPROVED" />
         <Checkbox checked={false} label="CONDITIONAL" />
         <Checkbox checked={false} label="REJECTED" />
